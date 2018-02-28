@@ -16,6 +16,7 @@ public class ExpressionTree extends TreeNode implements Expressions {
 		super(initValue, initLeft, initRight);
 	}
 
+	@Override
 	public ExpressionTree buildTree(String[] exp) {
 		Stack<Object> stk = new Stack<Object>();
 		for (String str : exp) {
@@ -30,6 +31,13 @@ public class ExpressionTree extends TreeNode implements Expressions {
 
 	}
 
+	/**
+	 * A helper method that checks whether a String is a mathematical operation
+	 * 
+	 * @param s
+	 *            the input to be checked
+	 * @return whether a String is a mathematical operation
+	 */
 	private boolean isOperation(String s) {
 		if (s.trim().equals("*") || s.trim().equals("+")) {
 			return true;
@@ -37,6 +45,18 @@ public class ExpressionTree extends TreeNode implements Expressions {
 			return false;
 	}
 
+	/**
+	 * A helper method that performs a mathematical operation given two integers and
+	 * a String operation and returns the result
+	 * 
+	 * @param n1
+	 *            the first number
+	 * @param n2
+	 *            the second number
+	 * @param operation
+	 *            the mathematical operation to be performed
+	 * @return the resultant of performing the mathematical operation
+	 */
 	private int performOp(int n1, int n2, String operation) {
 		switch (operation.trim()) {
 		case "*":
