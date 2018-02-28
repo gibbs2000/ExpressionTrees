@@ -7,11 +7,26 @@ import java.util.Stack;
  *
  */
 public class ExpressionTree extends TreeNode implements Expressions {
-
+	/**
+	 * Creates an ExpressionTree using the superclass constructor
+	 * 
+	 * @param initValue
+	 *            the value for the root of the ExpressionTree
+	 */
 	public ExpressionTree(Object initValue) {
 		super(initValue);
 	}
 
+	/**
+	 * Creates an ExpressionTree using the superclass constructor
+	 * 
+	 * @param initValue
+	 *            the value for the root of the ExpressionTree
+	 * @param initLeft
+	 *            the value for the left branch of the ExpressionTree
+	 * @param initRight
+	 *            the value for the right branch of the ExpressionTree
+	 */
 	public ExpressionTree(Object initValue, TreeNode initLeft, TreeNode initRight) {
 		super(initValue, initLeft, initRight);
 	}

@@ -1,3 +1,9 @@
+/**
+ * An interface for use in the ExpressionsTree project
+ * 
+ * @author Mrs. Kelly/Sean Gibbons
+ *
+ */
 public interface Expressions {
 	/**
 	 * Takes in an array of Strings in postfix notation order and builds and returns
