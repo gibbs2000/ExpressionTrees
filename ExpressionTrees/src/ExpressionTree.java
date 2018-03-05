@@ -32,6 +32,11 @@ public class ExpressionTree extends TreeNode implements Expressions {
 	}
 
 	@Override
+	public String toString() {
+		return this.getValue().toString();
+	}
+
+	@Override
 	public ExpressionTree buildTree(String[] exp) {
 		Stack<Object> stk = new Stack<Object>();
 		for (String str : exp) {
@@ -42,7 +47,7 @@ public class ExpressionTree extends TreeNode implements Expressions {
 				stk.push(Integer.parseInt(str));
 			}
 		}
-		return (ExpressionTree) new TreeNode(stk.pop());
+		return new ExpressionTree(stk.pop());
 
 	}
 
@@ -86,40 +91,40 @@ public class ExpressionTree extends TreeNode implements Expressions {
 	@Override
 	public int evalTree() {
 		if (this.getLeft() == null || this.getRight() == null) {
-			return Integer.parseInt((String) this.getValue());
+			return Integer.parseInt(this.getValue().toString());
 		} else {
 			return performOp(((ExpressionTree) this.getLeft()).evalTree(),
-					((ExpressionTree) this.getRight()).evalTree(), (String) this.getValue());
+					((ExpressionTree) this.getRight()).evalTree(), this.getValue().toString());
 		}
 	}
 
 	@Override
 	public String toPrefixNotation() {
 		if (this.getLeft() == null || this.getRight() == null) {
-			return (String) this.getValue();
+			return this.toString();
 		} else {
-			return (String) this.getValue() + (String) ((ExpressionTree) this.getLeft()).toPrefixNotation()
-					+ (String) ((ExpressionTree) this.getRight()).toPrefixNotation();
+			return this.toString() + ((ExpressionTree) this.getLeft()).toPrefixNotation()
+					+ ((ExpressionTree) this.getRight()).toPrefixNotation();
 		}
 	}
 
 	@Override
 	public String toInfixNotation() {
 		if (this.getLeft() == null || this.getRight() == null) {
-			return (String) this.getValue();
+			return this.toString();
 		} else {
-			return "(" + (String) ((ExpressionTree) this.getLeft()).toPrefixNotation() + (String) this.getValue()
-					+ (String) ((ExpressionTree) this.getRight()).toPrefixNotation() + ")";
+			return "(" + ((ExpressionTree) this.getLeft()).toPrefixNotation() + (String) this.getValue()
+					+ ((ExpressionTree) this.getRight()).toPrefixNotation() + ")";
 		}
 	}
 
 	@Override
 	public String toPostfixNotation() {
 		if (this.getLeft() == null || this.getRight() == null) {
-			return (String) this.getValue();
+			return this.toString();
 		} else {
-			return (String) ((ExpressionTree) this.getLeft()).toPostfixNotation()
-					+ (String) ((ExpressionTree) this.getRight()).toPostfixNotation() + (String) this.getValue();
+			return ((ExpressionTree) this.getLeft()).toPostfixNotation()
+					+ ((ExpressionTree) this.getRight()).toPostfixNotation() + this.toString();
 		}
 	}
 
