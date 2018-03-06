@@ -40,11 +40,15 @@ public class ExpressionTree extends TreeNode implements Expressions {
 	public ExpressionTree buildTree(String[] exp) {
 		Stack<Object> stk = new Stack<Object>();
 		for (String str : exp) {
-			if (this.isOperation(str)) {
-				TreeNode node = new ExpressionTree(str, new ExpressionTree(stk.pop()), new ExpressionTree(stk.pop()));
-				stk.push(node);
-			} else {
+			if (!this.isOperation(str)) {
 				stk.push(Integer.parseInt(str));
+			} else {
+
+				TreeNode right = new ExpressionTree(stk.pop());
+				TreeNode left = new ExpressionTree(stk.pop());
+				TreeNode node = new ExpressionTree(str, left, right);
+
+				stk.push(node);
 			}
 		}
 		return new ExpressionTree(stk.pop());
@@ -59,7 +63,8 @@ public class ExpressionTree extends TreeNode implements Expressions {
 	 * @return whether a String is a mathematical operation
 	 */
 	private boolean isOperation(String s) {
-		if (s.trim().equals("*") || s.trim().equals("+")) {
+		if (s.trim().equals("*") || s.trim().equals("+") || s.trim().equals("-") || s.trim().equals("/")
+				|| s.trim().equals("%")) {
 			return true;
 		} else
 			return false;
@@ -83,6 +88,16 @@ public class ExpressionTree extends TreeNode implements Expressions {
 			return n1 * n2;
 		case "+":
 			return n1 + n2;
+		case "-":
+			return n1 - n2;
+		case "/":
+			if (n2 != 0)
+				return n1 / n2;
+			else
+				throw new IllegalArgumentException("Cannot divide by 0");
+		case "%":
+			return n1 % n2;
+
 		default:
 			return n1 + n2;
 		}
