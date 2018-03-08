@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class ExpressionTester {
 	public static void main(String[] args) {
-		String[] beginTest = { "1", "2", "+", "3", "+" };
-		ExpressionTree tree = new ExpressionTree("f");
-		tree = tree.buildTree(beginTest);
-		System.out.println(tree.toPrefixNotation());
+		// String[] beginTest = { "1", "2", "+", "3", "+" };
+		// ExpressionTree tree = new ExpressionTree("f");
+		// tree = tree.buildTree(beginTest);
+		// System.out.println(tree.toPrefixNotation());
 
 		String fName = "postFixExpressions.txt";
 		String outputLoc = "myAnswers.txt";
@@ -21,8 +21,7 @@ public class ExpressionTester {
 		Scanner input = fileToScanner(fName);
 		if (input == null) {
 
-			System.out.println(
-					"You did not input a file name." + " \nPlease enter a valid file name ending with \".txt\": ");
+			System.out.println("Default file not found. \nPlease enter a valid file name ending with \".txt\": ");
 			Scanner in = new Scanner(System.in);
 			fName = in.next();
 			int counter = 0;
@@ -44,7 +43,9 @@ public class ExpressionTester {
 		PrintWriter output = outputFile(outputLoc);
 		ArrayList<String[]> expressions = makeExpressions(input);
 		for (String[] exp : expressions) {
-			output.println(testExpressionTrees(exp));
+			for (String s : exp) {
+				System.out.println(s);
+			}
 		}
 		output.close();
 		input.close();
@@ -56,7 +57,15 @@ public class ExpressionTester {
 		while (input.hasNextLine()) {
 			String l = input.nextLine();
 			ArrayList<String> exp = new ArrayList<String>();
-			
+			for (int i = 0; i < l.length();) {
+				if (l.indexOf(" ", i) != -1) {
+					exp.add(l.substring(i, l.indexOf(" ", i)));
+					i = l.indexOf(" ", i) + 1;
+
+				} else
+					break;
+
+			}
 			expressions.add(exp.toArray(new String[exp.size()]));
 
 		}
