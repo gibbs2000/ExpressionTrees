@@ -42,10 +42,10 @@ public class ExpressionTester {
 
 		PrintWriter output = outputFile(outputLoc);
 		ArrayList<String[]> expressions = makeExpressions(input);
+		output.println(ExpressionTree.getHeader());
 		for (String[] exp : expressions) {
-			for (String s : exp) {
-				System.out.println(s);
-			}
+			ExpressionTree t = new ExpressionTree(exp);
+			System.out.print(t);
 		}
 		output.close();
 		input.close();
@@ -82,10 +82,21 @@ public class ExpressionTester {
 	 * @return a String representation of the test results
 	 */
 	public static String testExpressionTrees(String[] exp) {
-		ExpressionTree example = new ExpressionTree("");
+		ExpressionTree example = new ExpressionTree(exp);
 		String output = "";
-		example = example.buildTree(exp);
+		// TODO finish
+		//Test the different notations
+		output += "Testing Notations \nPostfix Notation\n" + example.toPostfixNotation() + "\nPrefix Notation\n"
+				+ example.toPrefixNotation() + "\nInfix Notation\n" + example.toInfixNotation();
 
+		//Blank lines
+		output += "\n\n";
+		
+		//Test evaluation
+		output+= "Evaluating Expression: " + example.evalTree();
+		
+		output+= "Testing other methods"
+		
 		return output;
 	}
 
