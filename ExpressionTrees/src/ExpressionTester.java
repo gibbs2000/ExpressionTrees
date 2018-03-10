@@ -50,11 +50,9 @@ public class ExpressionTester {
 
 		PrintWriter output = outputFile(outputLoc);
 		ArrayList<String[]> expressions = makeExpressions(input);
-		output.println(ExpressionTree.getHeader());
 		for (String[] exp : expressions) {
 			output.println(testExpressionTrees(exp));
 		}
-		output.print(ExpressionTree.getFooter());
 		output.close();
 		input.close();
 	}
@@ -110,26 +108,14 @@ public class ExpressionTester {
 	public static String testExpressionTrees(String[] exp) {
 		ExpressionTree example = new ExpressionTree(exp);
 		String output = "";
+		output += example.evalTree() + "\n";
 
-		output += "Testing commencing...\nGiven expression \"";
-		for (String s : exp) {
-			output += s + " ";
-		}
-		output += "\" \n";
-		// Test the different notations
-		output += "Testing Notations \nPostfix Notation\n" + example.toPostfixNotation() + "\nPrefix Notation\n"
-				+ example.toPrefixNotation() + "\nInfix Notation\n" + example.toInfixNotation();
+		output += example.toPrefixNotation() + "\n" + example.toInfixNotation() + "\n" + example.toPostfixNotation()
+				+ "\n";
 
-		// Blank lines
+		output += example.postfixEval(exp);
+
 		output += "\n\n";
-
-		// Test evaluation
-		output += "Evaluating Expression using the ExpressionTree structure: " + example.evalTree() + "\n";
-
-		output += "Evaluating Expression using the postFixEval method " + example.postfixEval(exp) + "\n";
-		output += "Are these results the same? " + (example.evalTree() == (example.postfixEval(exp))) + "\n";
-
-		output += "Testing complete\n\n\n";
 
 		return output;
 	}

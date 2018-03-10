@@ -108,7 +108,7 @@ public class ExpressionTree extends TreeNode implements Expressions {
 			if (n2 != 0)
 				return n1 / n2;
 			else
-				throw new IllegalArgumentException("Cannot divide by 0\n\n" + getMsg());
+				throw new IllegalArgumentException("Cannot divide by 0\n\n");
 		case "%":
 			return n1 % n2;
 
@@ -187,51 +187,4 @@ public class ExpressionTree extends TreeNode implements Expressions {
 
 	}
 
-	private static final String header = ""
-			+ " _    _      _                            _         ______                 _       _   _                      \r\n"
-			+ "| |  | |    | |                          | |        | ___ \\               ( )     | | | |                     \r\n"
-			+ "| |  | | ___| | ___ ___  _ __ ___   ___  | |_ ___   | |_/ /_ _ _ __   __ _|/ ___  | |_| | ___  _   _ ___  ___ \r\n"
-			+ "| |/\\| |/ _ \\ |/ __/ _ \\| '_ ` _ \\ / _ \\ | __/ _ \\  |  __/ _` | '_ \\ / _` | / __| |  _  |/ _ \\| | | / __|/ _ \\\r\n"
-			+ "\\  /\\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | | | (_| | |_) | (_| | \\__ \\ | | | | (_) | |_| \\__ \\  __/\r\n"
-			+ " \\/  \\/ \\___|_|\\___\\___/|_| |_| |_|\\___|  \\__\\___/  \\_|  \\__,_| .__/ \\__,_| |___/ \\_| |_/\\___/ \\__,_|___/\\___|\r\n"
-			+ "                                                              | |                                             \r\n"
-			+ "                                                              |_|               ";
-	private static final String msg = " "
-			+ "____  _   _  ____     ___  _____  ____  ____    ____  ____  _____  _  _  ____ \r\n"
-			+ "(_  _)( )_( )( ___)   / __)(  _  )(  _ \\( ___)  (  _ \\(  _ \\(  _  )( )/ )( ___)\r\n"
-			+ "  )(   ) _ (  )__)   ( (__  )(_)(  )(_) ))__)    ) _ < )   / )(_)(  )  (  )__) \r\n"
-			+ " (__) (_) (_)(____)   \\___)(_____)(____/(____)  (____/(_)\\_)(_____)(_)\\_)(____)";
-	private static final String footer = " ______   ______     ______   ______        ______     __         ______     ______     ______    \r\n"
-			+ "/\\  == \\ /\\  __ \\   /\\  == \\ /\\  __ \\      /\\  == \\   /\\ \\       /\\  ___\\   /\\  ___\\   /\\  ___\\   \r\n"
-			+ "\\ \\  _-/ \\ \\  __ \\  \\ \\  _-/ \\ \\  __ \\     \\ \\  __<   \\ \\ \\____  \\ \\  __\\   \\ \\___  \\  \\ \\___  \\  \r\n"
-			+ " \\ \\_\\    \\ \\_\\ \\_\\  \\ \\_\\    \\ \\_\\ \\_\\     \\ \\_____\\  \\ \\_____\\  \\ \\_____\\  \\/\\_____\\  \\/\\_____\\ \r\n"
-			+ "  \\/_/     \\/_/\\/_/   \\/_/     \\/_/\\/_/      \\/_____/   \\/_____/   \\/_____/   \\/_____/   \\/_____/ \r\n"
-			+ "                                                                                                  ";
-
-	/**
-	 * Returns a secret message for use in error message
-	 * 
-	 * @return the secret message
-	 */
-	public static String getMsg() {
-		return msg;
-	}
-
-	/**
-	 * Returns a String to be used as a header in testing
-	 * 
-	 * @return a String to used for testing
-	 */
-	public static String getHeader() {
-		return header;
-	}
-
-	/**
-	 * Returns a String to be used as a footer in testing
-	 * 
-	 * @return a String to used for testing
-	 */
-	public static String getFooter() {
-		return footer;
-	}
 }

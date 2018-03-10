@@ -51,7 +51,8 @@ public interface Expressions {
 	 * expression
 	 * 
 	 * @param exp
-	 * @return
+	 *            the input of an array of Strings
+	 * @return the int value of the input when computed
 	 */
 	int postfixEval(String[] exp);
 }
