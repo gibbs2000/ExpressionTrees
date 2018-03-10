@@ -1,10 +1,575 @@
-          _____                    _____                _____                _____                    _____                    _____                            _____                    _____                    _____                    _____                    _____                    _____                    _____                    _____                    _____                _____                    _____                            _____                    _____                _____                _____                    _____                    _____                            _____                    _____                   _______                   _____                    _____                    _____                    _____                    _____                    _____                    _____                    _____          
-         /\    \                  /\    \              /\    \              /\    \                  /\    \                  /\    \                          /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \              /\    \                  /\    \                          /\    \                  /\    \              /\    \              /\    \                  /\    \                  /\    \                          /\    \                  /\    \                 /::\    \                 /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \         
-        /::\    \                /::\    \            /::\    \            /::\    \                /::\    \                /::\    \                        /::\    \                /::\____\                /::\    \                /::\    \                /::\    \                /::\    \                /::\    \                /::\    \                /::\____\            /::\    \                /::\    \                        /::\    \                /::\    \            /::\    \            /::\    \                /::\    \                /::\    \                        /::\    \                /::\    \               /::::\    \               /::\    \                /::\    \                /::\    \                /::\____\                /::\____\                /::\    \                /::\____\                /::\    \        
-       /::::\    \              /::::\    \           \:::\    \           \:::\    \              /::::\    \              /::::\    \                       \:::\    \              /::::|   |               /::::\    \              /::::\    \              /::::\    \              /::::\    \               \:::\    \              /::::\    \              /::::|   |            \:::\    \              /::::\    \                      /::::\    \              /::::\    \           \:::\    \           \:::\    \              /::::\    \              /::::\    \                      /::::\    \              /::::\    \             /::::::\    \             /::::\    \              /::::\    \              /::::\    \              /::::|   |               /::::|   |                \:::\    \              /::::|   |               /::::\    \       
-      /::::::\    \            /::::::\    \           \:::\    \           \:::\    \            /::::::\    \            /::::::\    \                       \:::\    \            /:::::|   |              /::::::\    \            /::::::\    \            /::::::\    \            /::::::\    \               \:::\    \            /::::::\    \            /:::::|   |             \:::\    \            /::::::\    \                    /::::::\    \            /::::::\    \           \:::\    \           \:::\    \            /::::::\    \            /::::::\    \                    /::::::\    \            /::::::\    \           /::::::::\    \           /::::::\    \            /::::::\    \            /::::::\    \            /:::::|   |              /:::::|   |                 \:::\    \            /:::::|   |              /::::::\    \      
-     /:::/\:::\    \          /:::/\:::\    \           \:::\    \           \:::\    \          /:::/\:::\    \          /:::/\:::\    \                       \:::\    \          /::::::|   |             /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \               \:::\    \          /:::/\:::\    \          /::::::|   |              \:::\    \          /:::/\:::\    \                  /:::/\:::\    \          /:::/\:::\    \           \:::\    \           \:::\    \          /:::/\:::\    \          /:::/\:::\    \                  /:::/\:::\    \          /:::/\:::\    \         /:::/~~\:::\    \         /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \          /::::::|   |             /::::::|   |                  \:::\    \          /::::::|   |             /:::/\:::\    \     
-    /:::/__\:::\    \        /:::/__\:::\    \           \:::\    \           \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \                       \:::\    \        /:::/|::|   |            /:::/  \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \        /:::/  \:::\    \               \:::\    \        /:::/__\:::\    \        /:::/|::|   |               \:::\    \        /:::/__\:::\    \                /:::/__\:::\    \        /:::/__\:::\    \           \:::\    \           \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \                /:::/__\:::\    \        /:::/__\:::\    \       /:::/    \:::\    \       /:::/  \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \        /:::/|::|   |            /:::/|::|   |                   \:::\    \        /:::/|::|   |            /:::/  \:::\    \    
-   /::::\   \:::\    \      /::::\   \:::\    \          /::::\    \          /::::\    \      /::::\   \:::\    \      /::::\   \:::\    \                      /::::\    \      /:::/ |::|   |           /:::/    \:::\    \      /::::\   \:::\    \      /::::\   \:::\    \      /:::/    \:::\    \              /::::\    \      /::::\   \:::\    \      /:::/ |::|   |               /::::\    \       \:::\   \:::\    \              /::::\   \:::\    \      /::::\   \:::\    \          /::::\    \          /::::\    \      /::::\   \:::\    \      /::::\   \:::\    \              /::::\   \:::\    \      /::::\   \:::\    \     /:::/    / \:::\    \     /:::/    \:::\    \      /::::\   \:::\    \      /::::\   \:::\    \      /:::/ |::|   |           /:::/ |::|   |                   /::::\    \      /:::/ |::|   |           /:::/    \:::\    \   
-  /::::::\   \:::\    \    /::::::\   \:::\    \        /::::::\    \        /::::::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \            ____    /::::::\    \    /:::/  |::|   | _____    /:::/    / \:::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \    /:::/    / \:::\    \    ____    /::::::\    \    /::::::\   \:::\    \    /:::/  |::|   | _____        /::::::\    \    ___\:::\   \:::\    \            /::::::\   \:::\    \    /::::::\   \:::\    \        /::::::\    \        /::::::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \            /::::::\   \:::\    \    /::::::\   \:::\    \   /:::/____/   \:::\____\   /:::/    / \:::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \    /:::/  |::|___|______    /:::/  |::|___|______    ____    /::::::\    \    /:::/  |::|   | _____    /:::/    / \:::\    \  
- /:::/\:::\   \:::\ ___\  /:::/\:::\   \:::\    \      /:::/\:::\    \      /:::/\:::\    \  /:::/\:::\   \:::\    \  /:::/\:::\   \:::\____\          /\   \  /:::/\:::\    \  /:::/   |::|   |/\    \  /:::/    /   \:::\ ___\  /:::/\:::\   \:::\____\  /:::/\:::\   \:::\    \  /:::/    /   \:::\ ___\  /\   \  /:::/\:::\    \  /:::/\:::\   \:::\    \  /:::/   |::|   |/\    \      /:::/\:::\    \  /\   \:::\   \:::\    \          /:::/\:::\   \:::\ ___\  /:::/\:::\   \:::\    \      /:::
+ _    _      _                            _         ______                 _       _   _                      
+| |  | |    | |                          | |        | ___ \               ( )     | | | |                     
+| |  | | ___| | ___ ___  _ __ ___   ___  | |_ ___   | |_/ /_ _ _ __   __ _|/ ___  | |_| | ___  _   _ ___  ___ 
+| |/\| |/ _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  |  __/ _` | '_ \ / _` | / __| |  _  |/ _ \| | | / __|/ _ \
+\  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | | | (_| | |_) | (_| | \__ \ | | | | (_) | |_| \__ \  __/
+ \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  \_|  \__,_| .__/ \__,_| |___/ \_| |_/\___/ \__,_|___/\___|
+                                                              | |                                             
+                                                              |_|               
+Testing commencing...
+Given expression "8 4 + " 
+Testing Notations 
+Postfix Notation
+8 4 +
+Prefix Notation
++ 8 4
+Infix Notation
+8 + 4
+
+Evaluating Expression using the ExpressionTree structure: 12
+Evaluating Expression using the postFixEval method 12
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 6 * " 
+Testing Notations 
+Postfix Notation
+8 6 *
+Prefix Notation
+* 8 6
+Infix Notation
+8 * 6
+
+Evaluating Expression using the ExpressionTree structure: 48
+Evaluating Expression using the postFixEval method 48
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 * + " 
+Testing Notations 
+Postfix Notation
+8 4 6 * +
+Prefix Notation
++ 8 * 4 6
+Infix Notation
+8 + (4 * 6)
+
+Evaluating Expression using the ExpressionTree structure: 32
+Evaluating Expression using the postFixEval method 32
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 + " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 +
+Prefix Notation
++ * 8 4 6
+Infix Notation
+(8 * 4) + 6
+
+Evaluating Expression using the ExpressionTree structure: 38
+Evaluating Expression using the postFixEval method 38
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 * + * " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 * + *
+Prefix Notation
+* 8 + 4 * 6 7
+Infix Notation
+8 * (4 + (6 * 7))
+
+Evaluating Expression using the ExpressionTree structure: 368
+Evaluating Expression using the postFixEval method 368
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 * 7 + * " 
+Testing Notations 
+Postfix Notation
+8 4 6 * 7 + *
+Prefix Notation
+* 8 + * 4 6 7
+Infix Notation
+8 * ((4 * 6) + 7)
+
+Evaluating Expression using the ExpressionTree structure: 248
+Evaluating Expression using the postFixEval method 248
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 * + 7 * " 
+Testing Notations 
+Postfix Notation
+8 4 6 * + 7 *
+Prefix Notation
+* + 8 * 4 6 7
+Infix Notation
+(8 + (4 * 6)) * 7
+
+Evaluating Expression using the ExpressionTree structure: 224
+Evaluating Expression using the postFixEval method 224
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 7 + * " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 7 + *
+Prefix Notation
+* * 8 4 + 6 7
+Infix Notation
+(8 * 4) * (6 + 7)
+
+Evaluating Expression using the ExpressionTree structure: 416
+Evaluating Expression using the postFixEval method 416
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 + 7 * " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 + 7 *
+Prefix Notation
+* + * 8 4 6 7
+Infix Notation
+((8 * 4) + 6) * 7
+
+Evaluating Expression using the ExpressionTree structure: 266
+Evaluating Expression using the postFixEval method 266
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 3 * + * + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 3 * + * +
+Prefix Notation
++ 8 * 4 + 6 * 7 3
+Infix Notation
+8 + (4 * (6 + (7 * 3)))
+
+Evaluating Expression using the ExpressionTree structure: 116
+Evaluating Expression using the postFixEval method 116
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 * 3 + * + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 * 3 + * +
+Prefix Notation
++ 8 * 4 + * 6 7 3
+Infix Notation
+8 + (4 * ((6 * 7) + 3))
+
+Evaluating Expression using the ExpressionTree structure: 188
+Evaluating Expression using the postFixEval method 188
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 * + 3 * + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 * + 3 * +
+Prefix Notation
++ 8 * + 4 * 6 7 3
+Infix Notation
+8 + ((4 + (6 * 7)) * 3)
+
+Evaluating Expression using the ExpressionTree structure: 146
+Evaluating Expression using the postFixEval method 146
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 * + * 3 + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 * + * 3 +
+Prefix Notation
++ * 8 + 4 * 6 7 3
+Infix Notation
+(8 * (4 + (6 * 7))) + 3
+
+Evaluating Expression using the ExpressionTree structure: 371
+Evaluating Expression using the postFixEval method 371
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 * 7 3 + * + " 
+Testing Notations 
+Postfix Notation
+8 4 6 * 7 3 + * +
+Prefix Notation
++ 8 * * 4 6 + 7 3
+Infix Notation
+8 + ((4 * 6) * (7 + 3))
+
+Evaluating Expression using the ExpressionTree structure: 248
+Evaluating Expression using the postFixEval method 248
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 * 7 + 3 * + " 
+Testing Notations 
+Postfix Notation
+8 4 6 * 7 + 3 * +
+Prefix Notation
++ 8 * + * 4 6 7 3
+Infix Notation
+8 + (((4 * 6) + 7) * 3)
+
+Evaluating Expression using the ExpressionTree structure: 101
+Evaluating Expression using the postFixEval method 101
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 * 7 + * 3 + " 
+Testing Notations 
+Postfix Notation
+8 4 6 * 7 + * 3 +
+Prefix Notation
++ * 8 + * 4 6 7 3
+Infix Notation
+(8 * ((4 * 6) + 7)) + 3
+
+Evaluating Expression using the ExpressionTree structure: 251
+Evaluating Expression using the postFixEval method 251
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 * + 7 3 * + " 
+Testing Notations 
+Postfix Notation
+8 4 6 * + 7 3 * +
+Prefix Notation
++ + 8 * 4 6 * 7 3
+Infix Notation
+(8 + (4 * 6)) + (7 * 3)
+
+Evaluating Expression using the ExpressionTree structure: 53
+Evaluating Expression using the postFixEval method 53
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 * + 7 * 3 + " 
+Testing Notations 
+Postfix Notation
+8 4 6 * + 7 * 3 +
+Prefix Notation
++ * + 8 * 4 6 7 3
+Infix Notation
+((8 + (4 * 6)) * 7) + 3
+
+Evaluating Expression using the ExpressionTree structure: 227
+Evaluating Expression using the postFixEval method 227
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 7 3 + * + " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 7 3 + * +
+Prefix Notation
++ * 8 4 * 6 + 7 3
+Infix Notation
+(8 * 4) + (6 * (7 + 3))
+
+Evaluating Expression using the ExpressionTree structure: 92
+Evaluating Expression using the postFixEval method 92
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 7 + 3 * + " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 7 + 3 * +
+Prefix Notation
++ * 8 4 * + 6 7 3
+Infix Notation
+(8 * 4) + ((6 + 7) * 3)
+
+Evaluating Expression using the ExpressionTree structure: 71
+Evaluating Expression using the postFixEval method 71
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 7 + * 3 + " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 7 + * 3 +
+Prefix Notation
++ * * 8 4 + 6 7 3
+Infix Notation
+((8 * 4) * (6 + 7)) + 3
+
+Evaluating Expression using the ExpressionTree structure: 419
+Evaluating Expression using the postFixEval method 419
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 + 7 3 * + " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 + 7 3 * +
+Prefix Notation
++ + * 8 4 6 * 7 3
+Infix Notation
+((8 * 4) + 6) + (7 * 3)
+
+Evaluating Expression using the ExpressionTree structure: 59
+Evaluating Expression using the postFixEval method 59
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 + 7 * 3 + " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 + 7 * 3 +
+Prefix Notation
++ * + * 8 4 6 7 3
+Infix Notation
+(((8 * 4) + 6) * 7) + 3
+
+Evaluating Expression using the ExpressionTree structure: 269
+Evaluating Expression using the postFixEval method 269
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 7 3 + * + " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 7 3 + * +
+Prefix Notation
++ * 8 4 * 6 + 7 3
+Infix Notation
+(8 * 4) + (6 * (7 + 3))
+
+Evaluating Expression using the ExpressionTree structure: 92
+Evaluating Expression using the postFixEval method 92
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 7 + 3 * + " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 7 + 3 * +
+Prefix Notation
++ * 8 4 * + 6 7 3
+Infix Notation
+(8 * 4) + ((6 + 7) * 3)
+
+Evaluating Expression using the ExpressionTree structure: 71
+Evaluating Expression using the postFixEval method 71
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 * 6 7 + * 3 + " 
+Testing Notations 
+Postfix Notation
+8 4 * 6 7 + * 3 +
+Prefix Notation
++ * * 8 4 + 6 7 3
+Infix Notation
+((8 * 4) * (6 + 7)) + 3
+
+Evaluating Expression using the ExpressionTree structure: 419
+Evaluating Expression using the postFixEval method 419
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 3 2 * + * + + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 3 2 * + * + +
+Prefix Notation
++ 8 + 4 * 6 + 7 * 3 2
+Infix Notation
+8 + (4 + (6 * (7 + (3 * 2))))
+
+Evaluating Expression using the ExpressionTree structure: 90
+Evaluating Expression using the postFixEval method 90
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 * 3 + * + 2 + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 * 3 + * + 2 +
+Prefix Notation
++ + 8 * 4 + * 6 7 3 2
+Infix Notation
+(8 + (4 * ((6 * 7) + 3))) + 2
+
+Evaluating Expression using the ExpressionTree structure: 190
+Evaluating Expression using the postFixEval method 190
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 * + 3 2 * + + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 * + 3 2 * + +
+Prefix Notation
++ 8 + + 4 * 6 7 * 3 2
+Infix Notation
+8 + ((4 + (6 * 7)) + (3 * 2))
+
+Evaluating Expression using the ExpressionTree structure: 60
+Evaluating Expression using the postFixEval method 60
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 * + * 3 2 + + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 * + * 3 2 + +
+Prefix Notation
++ * 8 + 4 * 6 7 + 3 2
+Infix Notation
+(8 * (4 + (6 * 7))) + (3 + 2)
+
+Evaluating Expression using the ExpressionTree structure: 373
+Evaluating Expression using the postFixEval method 373
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 * + * 3 + 2 + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 * + * 3 + 2 +
+Prefix Notation
++ + * 8 + 4 * 6 7 3 2
+Infix Notation
+((8 * (4 + (6 * 7))) + 3) + 2
+
+Evaluating Expression using the ExpressionTree structure: 373
+Evaluating Expression using the postFixEval method 373
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 * + 3 * 2 + + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 * + 3 * 2 + +
+Prefix Notation
++ 8 + * + 4 * 6 7 3 2
+Infix Notation
+8 + (((4 + (6 * 7)) * 3) + 2)
+
+Evaluating Expression using the ExpressionTree structure: 148
+Evaluating Expression using the postFixEval method 148
+Are these results the same? true
+Testing complete
+
+
+
+Testing commencing...
+Given expression "8 4 6 7 * + 3 * + 2 + " 
+Testing Notations 
+Postfix Notation
+8 4 6 7 * + 3 * + 2 +
+Prefix Notation
++ + 8 * + 4 * 6 7 3 2
+Infix Notation
+(8 + ((4 + (6 * 7)) * 3)) + 2
+
+Evaluating Expression using the ExpressionTree structure: 148
+Evaluating Expression using the postFixEval method 148
+Are these results the same? true
+Testing complete
+
+
+
+ ______   ______     ______   ______        ______     __         ______     ______     ______    
+/\  == \ /\  __ \   /\  == \ /\  __ \      /\  == \   /\ \       /\  ___\   /\  ___\   /\  ___\   
+\ \  _-/ \ \  __ \  \ \  _-/ \ \  __ \     \ \  __<   \ \ \____  \ \  __\   \ \___  \  \ \___  \  
+ \ \_\    \ \_\ \_\  \ \_\    \ \_\ \_\     \ \_____\  \ \_____\  \ \_____\  \/\_____\  \/\_____\ 
+  \/_/     \/_/\/_/   \/_/     \/_/\/_/      \/_____/   \/_____/   \/_____/   \/_____/   \/_____/ 
+                                                                                                  
